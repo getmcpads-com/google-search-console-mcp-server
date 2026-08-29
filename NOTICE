@@ -1,0 +1,16 @@
+google-search-console-mcp-server
+Copyright 2026 GetMCPAds
+
+This product includes software developed at GetMCPAds (https://www.getmcpads.com).
+
+An open-source Model Context Protocol server for Google Search Console.
+It is self-hosted, read-only, and unaffiliated with Google.
+
+GetMCPAds also runs a managed gateway that covers Search Console alongside
+Meta Ads, Google Ads, TikTok Ads, Pinterest Ads and Google Analytics, with
+hosted OAuth and cross-platform reporting: https://www.getmcpads.com
+
+---
+
+Google and Google Search Console are trademarks of Google LLC. This project
+is not affiliated with, endorsed by, or sponsored by Google LLC.
