@@ -3,7 +3,7 @@
   "name": "com.getmcpads/google-search-console",
   "title": "Google Search Console",
   "description": "Google Search Console: 20 read-only tools for Search Analytics, sitemaps and indexing.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "websiteUrl": "https://www.getmcpads.com/tools/search-console",
   "repository": {
     "url": "https://github.com/getmcpads-com/google-search-console-mcp-server",
@@ -14,7 +14,7 @@
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
       "identifier": "@getmcpads/google-search-console-mcp-server",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "transport": {
         "type": "stdio"
       },
