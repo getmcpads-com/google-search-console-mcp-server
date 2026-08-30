@@ -15,6 +15,8 @@ machine.
 npx -y @getmcpads/google-search-console-mcp-server
 ```
 
+Also listed in the [MCP Registry](https://registry.modelcontextprotocol.io) as **`com.getmcpads/google-search-console`**, so clients that read the registry can install it by name.
+
 > **Prefer not to run it yourself?** [getmcpads.com](https://www.getmcpads.com) is the hosted
 > version of this server, with Search Console alongside Meta Ads, Google Ads, TikTok Ads,
 > Pinterest Ads and Google Analytics behind a single endpoint, hosted OAuth, and
