@@ -311,3 +311,14 @@ Please read [SECURITY.md](SECURITY.md) before reporting anything security-relate
 Google and Google Search Console are trademarks of Google LLC.
 **This project is not affiliated with, endorsed by, or sponsored by Google LLC.**
 It is an independent client of a public API.
+
+## Version 1.1: platform updates and MCP contracts
+
+Every tool now declares read/write annotations, parameter descriptions and a structured output schema. Successful calls retain their original text and expose the same payload as `structuredContent.result`; provider fields depend on the selected report. Errors retain `isError: true`. The generated [server card](server-card.json) contains definitions only, with no account credentials.
+
+
+The hosted GetMCPAds service additionally provides OAuth account selection and interactive review workspaces. Local servers use your own platform credentials and return native report data and media references.
+
+### Desktop bundle
+
+Run `npm run bundle -- /path/to/output` to build a `.mcpb` desktop bundle from the current catalogue. The bundle contains production dependencies, documented local configuration, and complete tool definitions. Provider credentials are entered locally during installation; write tools remain disabled unless explicitly enabled.

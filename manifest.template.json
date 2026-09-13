@@ -1,0 +1,90 @@
+{
+  "manifest_version": "0.3",
+  "name": "google-search-console-mcp-server",
+  "display_name": "Google Search Console by Get MCP Ads",
+  "version": "1.1.0",
+  "description": "Google Search Console MCP server: 20 read tools.",
+  "author": {
+    "name": "GetMCPAds",
+    "url": "https://www.getmcpads.com"
+  },
+  "homepage": "https://www.getmcpads.com/tools/search-console",
+  "documentation": "https://github.com/getmcpads-com/google-search-console-mcp-server#readme",
+  "support": "https://github.com/getmcpads-com/google-search-console-mcp-server/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getmcpads-com/google-search-console-mcp-server"
+  },
+  "icon": "icon.png",
+  "license": "Apache-2.0",
+  "server": {
+    "type": "node",
+    "entry_point": "dist/cli.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/dist/cli.js"
+      ],
+      "env": {
+        "GSC_CLIENT_ID": "${user_config.gsc_client_id}",
+        "GSC_CLIENT_SECRET": "${user_config.gsc_client_secret}",
+        "GSC_REFRESH_TOKEN": "${user_config.gsc_refresh_token}",
+        "GSC_ACCESS_TOKEN": "${user_config.gsc_access_token}",
+        "GSC_SITE_URL": "${user_config.gsc_site_url}"
+      }
+    }
+  },
+  "user_config": {
+    "gsc_client_id": {
+      "type": "string",
+      "title": "Gsc Client Id",
+      "description": "OAuth client ID.",
+      "required": false,
+      "sensitive": false,
+      "default": ""
+    },
+    "gsc_client_secret": {
+      "type": "string",
+      "title": "Gsc Client Secret",
+      "description": "OAuth client secret.",
+      "required": false,
+      "sensitive": true,
+      "default": ""
+    },
+    "gsc_refresh_token": {
+      "type": "string",
+      "title": "Gsc Refresh Token",
+      "description": "OAuth refresh token, webmasters.readonly scope.",
+      "required": false,
+      "sensitive": true,
+      "default": ""
+    },
+    "gsc_access_token": {
+      "type": "string",
+      "title": "Gsc Access Token",
+      "description": "Short-lived access token, alternative to the three values above.",
+      "required": false,
+      "sensitive": true,
+      "default": ""
+    },
+    "gsc_site_url": {
+      "type": "string",
+      "title": "Gsc Site Url",
+      "description": "Default property, https://example.com/ or sc-domain:example.com.",
+      "required": false,
+      "sensitive": false,
+      "default": ""
+    }
+  },
+  "tools_generated": true,
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=18"
+    }
+  }
+}
